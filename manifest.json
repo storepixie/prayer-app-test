@@ -1,7 +1,7 @@
 {
 	"name": "Prayer Book",
 	"short_name": "Prayer Book",
-	"description": "An app made by me",
+	"description": "An app made by St. Alphonsa Leicester ( Syro Malabar ) ",
 	"start_url": "./",
 	"scope"	: ".",
 	"display": "standalone",
