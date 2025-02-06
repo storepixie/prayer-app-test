@@ -1,5 +1,5 @@
 // Cache name
-var cacheName = 'secondVersion';
+var cacheName = 'thirdVersion';
 // const pb_cache = "pbc_v1_" + new Date().toISOString().split('T')[0];
 
 // List of assets to cache
