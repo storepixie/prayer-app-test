@@ -1,0 +1,184 @@
+html{
+	font-size: 40px;
+}
+
+body{
+	text-align: center;
+	display: table;
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+}
+
+@font-face {
+	font-family: 'roboto-medium';
+	font-weight: normal;
+	font-style: normal;
+	src: url(../fonts/Roboto-Medium.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'gayathri-regular';
+	font-weight: normal;
+	font-style: normal;
+	src: 	url(../fonts/Gayathri-Regular.woff2) format('woff2'), 
+			url(../fonts/Gayathri-Regular.otf) format('opentype'), 
+			url(../fonts/Gayathri-Regular.ttf) format('truetype');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+0D01-0D7F, U+200C-U+200D, U+25CC;
+}
+
+body.malayalam{
+	font-family: 'gayathri-regular';
+}
+
+.english-content p{
+	font-family: 'roboto-medium';
+	font-size: 0.43rem;
+}
+
+.section p.english{
+	font-size: 0.43rem;
+	font-family: 'roboto-medium';
+}
+
+.malayalam .title{
+	margin: 0.5rem auto 0.4rem auto;
+}
+
+.maintitle{
+	font-size: 0.6rem;
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+.subtitle{
+	font-size: 0.45rem;
+	margin: 0 auto;
+}
+
+.small-label{
+	font-size: 0.4rem;
+	margin: 5px auto 0px auto;
+}
+
+.main-wrapper{
+	margin: 15px 15px 8px 15px;
+    border: 1px solid #9c9b9b;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 0px 20px;
+}
+
+.main-content{
+	margin: 0 auto;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.section{
+	margin: 18px auto;
+	clear: both;
+	overflow: auto;
+}
+
+.section p{
+	font-size: 0.45rem;
+	text-align: left;
+	margin: 5px auto;
+	font-family: 'gayathri-regular';
+}
+
+.right-align{
+	text-align: right !important;
+}
+
+.center-align{
+	text-align: center !important;
+}
+
+.section p.rossary-helper{
+	margin: 10px auto 5px auto;
+}
+
+p.english{
+	font-family: 'roboto-medium';
+	font-size: 0.43rem;
+}
+
+.prayer-cover img{
+	width: 65%;
+	display: block;
+	margin: 0 auto;
+}
+
+body.holy-week .prayer-cover img{
+	width: 100%;
+}
+
+body.holy-week .prayer-cover .logo{
+	width: 100%;
+}
+
+.prayer-cover.english-title img{
+	width: 55%;
+}
+
+.palm-sunday .prayer-cover.english-title img{
+	width: 80% !important;
+}
+
+.palm-sunday .section.paragraph-song{
+	margin: 0 auto;
+	width: 82%;
+}
+
+.palm-sunday .section.prayer-set p{
+	margin: 10px auto;
+}
+
+.prayer-title{
+	font-size: 1rem;
+	text-align: center;
+	margin: 20px auto;
+	font-weight: 500;
+	color: #b93737;
+	font-family: 'gayathri-regular';
+}
+
+.prayer-cover.english-title .prayer-title{
+	font-family: 'roboto-medium';
+}
+
+.cover.page-content{
+	display: table;
+	height: 100vh;
+	margin-bottom: 36px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.cover.page-content .prayer-cover{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#jumpto{
+	text-decoration: underline;
+	color: #0000EE;
+	cursor: pointer;
+}
+
+.section .prayer-left{
+	width: 18%;
+	float: left;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+.section .prayer-right{
+	width: 82%;
+	float: left;
+	box-sizing: border-box;
+	vertical-align: top;
+}
