@@ -17,6 +17,8 @@
                                           client.postMessage({ action: "newVersionAvailable" });
                                         });
                                     });
+                                    document.getElementById('app_messages').innerHTML = 'New Update 1';
+                                   showUpdateBanner();
                                 } else {
                                     // console.log('Content is now available offline!');
                                 }
@@ -27,6 +29,19 @@
                                 break;
                         }
                     };
+
+                    if (navigator.serviceWorker.controller) {
+                        console.log('A new update has been found.');
+                        document.getElementById('app_messages').innerHTML = 'New Update 2';
+                        // You can use this spot to notify the user, either with a message or a prompt.
+                        // Example: Show a message or a "Check for Updates" button
+                        clients.matchAll().then(function(clients) {
+                            clients.forEach(function(client) {
+                                client.postMessage({ action: "newUpdateFound" });
+                            });
+                        });
+                    }
+                    break;
                 };
             }).catch(function(e) {
                 // console.error('Error during service worker registration:', e);
@@ -36,17 +51,17 @@
         document.addEventListener('visibilitychange', () => {
             
             if (document.visibilityState === 'visible') {
-                document.getElementById('app_messages').innerHTML = 'Visibility Changed';
+                // document.getElementById('app_messages').innerHTML = 'Visibility Changed';
                 // The app has been resumed from the background; check for updates
                 registration.update();  // Force an update check for the service worker
             }
         });
 
-        navigator.serviceWorker.addEventListener('message', function(event) {
-          if (event.data && event.data.action === 'newVersionAvailable') {
-            showUpdateBanner();
-          }
-        });
+        // navigator.serviceWorker.addEventListener('message', function(event) {
+        //   if (event.data && event.data.action === 'newVersionAvailable') {
+        //     showUpdateBanner();
+        //   }
+        // });
         
 	}
 
