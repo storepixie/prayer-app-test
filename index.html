@@ -30,7 +30,6 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 		<link rel="manifest" href="./manifest.json" />
 		<link rel="stylesheet" href="./css/styles.css" />
-
 	</head>
 	<body>
 		<div class="app app-layout">
@@ -67,9 +66,9 @@
 					</div>
 				</div>
 				<!-- Add this at the very top of your <body> in index.html -->
-				<div id="update-banner" style="display:none;">
-				  A new version is available! <button id="reload">Refresh</button>
-				</div>
+				<!-- <div id="update-banner" style="display:none;">
+				  A new version is available! <button id="reload-btn">Refresh</button>
+				</div> -->
 				<div class="content-menu">
 					<div class="content-menu-item">
 						<a href="./prayers.html">Prayers 8</a>
@@ -87,9 +86,9 @@
 			</div>
 
 		</div>
+		 <div id="snackbar">A new version of this app is available. Click <a id="reload">here</a> to update.</div>
 		<script src="./js/menu.js"></script>
-		<!-- <script src="./js/app.js"></script> -->
-		<script>
+				<script>
 
   let newWorker;
 
@@ -134,6 +133,6 @@
   }
 
 </script>
-
+		<!-- <script src="./js/app.js"></script> -->
 	</body>
 </html>
